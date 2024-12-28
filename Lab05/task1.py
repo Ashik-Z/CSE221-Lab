@@ -12,7 +12,6 @@ def adjacency_list(N, weighted_edges):
         graph[u].append((v, w))
     return graph
 graph = adjacency_list(N, weighted_edges)
-print(graph)
 
 def dijkstra(graph, start, N):
     inf = float('inf')
