@@ -35,7 +35,7 @@ def kruskal(N, edges):
     mst_edge = 0
     
     for u, v, w in edges:
-        if find(parent, u != find(parent, v)):
+        if find(parent, u) != find(parent, v):
             union(parent, rank, u, v)
             mst_cost += w
             mst_edge += 1
